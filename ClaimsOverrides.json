@@ -1,0 +1,33 @@
+{
+  "_description": "Overrides por claim. Cada entrada se aplica a UN claim concreto identificado por ID/UID. Solo se ponen aquí los campos que quieras cambiar respecto a defaults.",
+  "_note": "Si un campo no aparece aquí, se hereda de GlobalConfig.json > defaults.",
+  "overrides": [
+    {
+      "_description": "Ejemplo: claim del Árbol. Dentro no se propaga el fuego, pero sí se permite encender hoguera y antorchas.",
+      "claimId": "REEMPLAZAR_POR_ID_REAL",
+
+      "fireSpread": { "enabled": false },
+
+      "fireIgnition": {
+        "enabled": true,
+        "allowTorches": true,
+        "allowFirepit": true,
+        "allowCharcoalPit": true,
+        "allowFirestarterOnBlocks": true
+      }
+    },
+    {
+      "_description": "Ejemplo: claim tipo museo. Ni propagación ni ignición (zona ultra segura).",
+      "claimId": "REEMPLAZAR_POR_ID_REAL_2",
+
+      "fireSpread": { "enabled": false },
+      "fireIgnition": {
+        "enabled": false,
+        "allowTorches": false,
+        "allowFirepit": false,
+        "allowCharcoalPit": false,
+        "allowFirestarterOnBlocks": false
+      }
+    }
+  ]
+}

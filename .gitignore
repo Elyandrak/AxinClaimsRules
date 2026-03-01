@@ -1,0 +1,28 @@
+[2/6] Creating .gitignore
+# .NET / Visual Studio
+bin/
+obj/
+.vs/
+*.user
+*.suo
+*.cache
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+TestResults/
+
+# Rider / JetBrains
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Vintage Story local data (never commit
+VintagestoryData/
+ModConfig/
+Logs/
+
+# Optional: built zip artifacts
+*.zip

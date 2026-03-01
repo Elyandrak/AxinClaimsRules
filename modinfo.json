@@ -1,0 +1,14 @@
+{
+  "type": "code",
+  "modid": "axinclaimsrules",
+  "name": "AxinClaimsRules",
+  "side": "universal",
+  "authors": [
+    "elYandrack"
+  ],
+  "description": "Reglas por claim.0.6.6.4-IA-ARCH: purge de claims fantasma custommessage- (skip export + purge en reload/export). Config en ModConfig/AxinClaimsRules.",
+  "version": "0.6.6.4",
+  "dependencies": {
+    "game": "1.21.6"
+  }
+}

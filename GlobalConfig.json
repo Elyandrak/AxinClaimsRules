@@ -1,0 +1,50 @@
+{
+  "_description": "AxinClaimsRules - Configuración GLOBAL (defaults). Aquí defines el comportamiento por defecto para TODOS los claims. Los overrides por claim se guardarán en un archivo separado (ClaimsOverrides.json).",
+  "_note": "Reglas clave aprendidas: ignición ≠ propagación. No inventar nombres de eventos: primero se loguea y se verifica qué hook real usa Vintage Story.",
+  "version": "0.6.0",
+
+  "defaults": {
+    "_description": "Valores por defecto aplicados a cualquier claim que NO tenga override.",
+
+    "fireSpread": {
+      "_description": "Controla la PROPAGACIÓN de fuego entre bloques (fuego que salta de un bloque a otro esto queda cancelado por defecto).",
+      "enabled": false
+    },
+
+    "fireIgnition": {
+      "_description": "Controla la IGNICIÓN (encender fuego). Ej: antorchas/yesca/hoguera. OJO: si lo desactivas puedes romper mecánicas de cocina/iluminación.",
+      "enabled": true,
+      "allowTorches": true,
+      "allowFirepit": true,
+      "allowCharcoalPit": true,
+      "allowFirestarterOnBlocks": true
+    },
+
+    "fluidSpread": {
+      "_description": "Controla la propagación/flujo de fluidos dentro de claims (agua/lava).",
+      "enabled": true
+    },
+
+    "fluidPlace": {
+      "_description": "Controla si un jugador puede COLOCAR fluidos (cubos u objetos que ponen líquido).",
+      "enabled": true
+    },
+
+    "blockPlace": {
+      "_description": "Controla la colocación de bloques dentro del claim.",
+      "enabled": true
+    },
+
+    "blockBreak": {
+      "_description": "Controla la rotura/minado de bloques dentro del claim.",
+      "enabled": true
+    },
+
+    "mobSpawn": {
+      "_description": "Controla el spawn natural dentro de claims. (A verificar con logs/hook real antes de implementarlo).",
+      "enabled": true,
+      "hostile": true,
+      "passive": true
+    }
+  }
+}
